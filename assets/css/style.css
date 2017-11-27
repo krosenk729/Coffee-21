@@ -1,24 +1,141 @@
+/* Styles for Week-4-Homework */
+
 /**************************
-* Page Setup & Styles
+* Font Treatments & Page Setup
 ***************************/
+
+/* light green #C9DCD1
+/* light gold / cream #DEBA97
+/* dark green #1C473E
+/* lightER gold / grey #E3E0E1
+/* red #BB3A3E #E02B31 */
+
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 html, body{
 	height: 100%;
-	line-height: 1.2em;
+	margin: 0;
+	padding: 0;
 }
 
 .page-bg-body {
 	background-color: #C9DCD1;
+	background-image: url('../images/bgtexture.jpg');
+	background-size: cover;
 	height: 100%;
-	width: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2em;
+	font-family: 'Roboto', sans-serif;
+	overflow: auto;
 }
+
+
+/* Recovering from Reset */
+head{ display: none }
+h1 { font-size: 2.5em; margin: .67em 0; color: #BB3A3E; }
+h2 { font-size: 1.5em; margin: .75em 0 }
+h3, p.instructions { font-size: 1.17em; margin: .83em 0; color: #1C473E;}
+h4, p, blockquote, ul, fieldset, form, ol, dl, dir, menu, textarea, input { margin: 1.12em 0 }
+h5 { font-size: .83em; margin: 1.5em 0 }
+h6 { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4, h5, h6, b, strong{font-weight: bolder}
+button, textarea, input, select   { display: inline-block }
+ol, ul, dir, menu, dd { margin-left: 40px }
+ol { list-style-type: decimal }
+ol ul, ul ol, ul ul, ol ol { margin-top: 0; margin-bottom: 0 }
+br:before { content: "\A"; white-space: pre-line }
 
 
 
 /**************************
 * Game Control Styles
 ***************************/
+.game{
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	text-align: center;
+}
+.game-heading{
+
+}
+.game-controls{
+	display: flex;
+	justify-content: space-between;
+}
+.game-control{
+	margin: .5em;
+    padding: 0;
+    background: none;
+    border: 0;
+}
+
+.game-control:hover{
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.game-control img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/**Game Score Styling **/
+.game-scores{
+	display: inline-flex;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+.score {
+	color: #1C473E;
+	background-color: #E3E0E1;
+	border: 6px solid #1C473E;
+	width: 50%;
+	margin: .1em;
+}
+
+#cafgoal, #cafuser{
+	text-decoration: underline wavy;
+	font-weight: bold;	
+}
+
+/**Past Score Styling **/
+
+.game-scores.past-scores {
+	width: 75%;
+}
+
+.past-scores .score{
+	color: #E3E0E1;
+	background-color: #1C473E;
+}
+
+
 
 /**************************
-* 
+* Mobile Sizes
 ***************************/
+
+@media screen and (max-width: 700px){
+	.game-controls{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.game-control{
+		margin: 0.2em;
+		flex-basis: 40%;
+	}
+	.game-scores{
+		flex-wrap: wrap;
+	}
+	.score{
+		flex-grow: 1;
+	}
+}

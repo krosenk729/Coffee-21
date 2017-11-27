@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caffiene Up</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Use coffee buttons to reach a score game">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet"> 
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/script.js"></script>
+</head>
+<body>
+	<div class="page-bg-body">
+		<div class="game">
+			<div class="game-heading">
+				<h1>Get Coffee'd Up</h1>
+				<p class="instructions">Click on a button to increase your caffeine score. Be careful not to get too jittery and go over.</p>
+			</div>
+			<div class="game-controls">
+				<button class="game-control game-control-1" id="control1" data-cafbutton="1"><img src="assets/images/coffee-btn-1.png" alt="Coffee cup button one"></button>
+				<button class="game-control game-control-2" id="control2" data-cafbutton="2"><img src="assets/images/coffee-btn-2.png" alt="Coffee cup button two"></button>
+				<button class="game-control game-control-3" id="control3" data-cafbutton="3"><img src="assets/images/coffee-btn-3.png" alt="Coffee cup button three"></button>
+				<button class="game-control game-control-4" id="control4" data-cafbutton="4"><img src="assets/images/coffee-btn-4.png" alt="Coffee cup button four"></button>
+			</div>
+			<div class="game-scores current-scores">
+				<div class="score score-goal">
+					<p>Your goal is to reach: <span id="cafgoal">0</span></p>
+				</div>
+				<div class="score score-user">
+					<p>You currently have: <span id="cafuser">0</span></p>
+				</div>
+			</div>
+			<div class="game-scores past-scores">
+				<div class="score score-wins">
+					<p>Wins: <span id="cafwins">0</span> Cups O'Joe</p>
+				</div>
+				<div class="score score-loses">
+					<p>Losses: <span id="cafloses">0</span> Times Ourun by Caffeine</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
