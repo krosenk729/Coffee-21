@@ -9,8 +9,11 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/javascript/script.js"></script>
+
+	<!--defects: 1. make user score grow/highlight when it changes 2. alert user when win/lose 3. make image scroll down on win -->
 </head>
 <body>
+
 	<div class="page-bg-body">
 		<div class="game">
 			<div class="game-heading">
@@ -36,10 +39,17 @@
 					<p>Wins: <span id="cafwins">0</span> Cups O'Joe</p>
 				</div>
 				<div class="score score-loses">
-					<p>Losses: <span id="cafloses">0</span> Times Ourun by Caffeine</p>
+					<p>Losses: <span id="cafloses">0</span> Times Outrun by Caffeine</p>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="modal" onclick="$(this).toggleClass('modal-shown');">
+		<h1>Done</h1>
+		<p>Like a cup of coffee, all good things must come to an end</p>
+		<p>Click anywhere to play again</p>
+		<p>(don't worry, we're keeping track of your score)</p>
+		<img src="assets/images/rainingcoffee.png" style="position: absolute;bottom: -65%;width: 100%;">
 	</div>
 
 </body>
