@@ -32,6 +32,7 @@ $(document).ready(function(){
 		// if win, notify and reset
 		if(cafuserscore == cafgoal){
 			cafwins ++;
+			$('.modal h1').html('Winner, Winner. Coffee Dinner');
 			$('#cafwins').html(cafwins);
 			$('.modal').toggleClass('modal-shown');
 			gameSetup();
@@ -39,6 +40,7 @@ $(document).ready(function(){
 		//if lose, notify and reset
 		else if(cafuserscore > cafgoal){
 			cafloses ++;
+			$('.modal h1').html('Cry Over Spilled Coffee');
 			$('#cafloses').html(cafloses);
 			$('.modal').toggleClass('modal-shown');
 			gameSetup();
