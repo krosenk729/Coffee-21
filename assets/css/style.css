@@ -83,10 +83,12 @@ br:before { content: "\A"; white-space: pre-line }
 	width: 100%;
 	height: 100%;
 	transition: .1s ease;
+	-webkit-transition: .1s ease;
 }
 
 .game-control:active{
 	transform: scale(.9);
+	-webkit-transform: scale(.9);
 }
 
 
@@ -149,8 +151,9 @@ br:before { content: "\A"; white-space: pre-line }
 
 .modal.modal-shown{
 	visibility: visible;
-	animation-name: modalSlide;
-	animation-duration: 1.5s;
+	-webkit-animation: modalSlide 1.5s ease-out;
+	-o-animation: modalSlide 1.5s ease-out;
+	animation: modalSlide 1.5s ease-out;
 }
 
 
