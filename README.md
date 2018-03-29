@@ -1,4 +1,6 @@
-### Week-4-Homework
+### Coffee ~~21~~ Number
+
+![demo](/assets/images/demo.png)
 
 [https://krosenk729.github.io/Week-4-Homework/](https://krosenk729.github.io/Week-4-Homework/)
 
