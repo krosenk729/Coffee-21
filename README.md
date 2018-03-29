@@ -2,7 +2,7 @@
 
 ![demo](/assets/images/demo.png)
 
-[https://krosenk729.github.io/Week-4-Homework/](https://krosenk729.github.io/Week-4-Homework/)
+[Play it yourself!](https://krosenk729.github.io/Coffee-21/)
 
 ## Rules
 * The system creates a random number as the winning number, four user buttons with randomly assigned values, and gives the user a total of zero points
